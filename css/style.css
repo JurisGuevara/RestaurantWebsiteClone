@@ -1,0 +1,404 @@
+
+
+
+
+/*============================CSS FOR INDEX.HTML===========================================*/
+
+* {
+	border: none;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+	overflow-y: scroll;
+	overflow-x: hidden;
+	background-image: url('../img/landing/brickwall.jpg');
+	background-size: 80%;
+	background-repeat: repeat;
+}
+
+main{
+	max-width: 960px;
+	margin: auto;
+	margin-bottom: 4rem;
+}
+
+header{
+	background-color: #660000;
+	color: #fff;
+}
+
+footer{
+	color: #ccc;
+	background-color: #660000;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+footer div{
+	max-width: 960px;
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#logo:hover{
+	cursor: pointer;
+	outline-style: none;
+}
+
+#custom-header{
+	display: flex;
+	flex-direction: row;
+	max-width: 960px;
+	margin: auto;
+}
+
+#header-list{
+	width: 100%;
+	padding-left: 150px;
+	justify-content: space-around;
+	display: flex;
+	flex-direction: row;
+}
+
+#header-list a{
+	font-size: 0.8rem;
+	text-decoration: none;
+	color: #fff;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	transition-duration: 0.5s;
+	transition-timing-function: ease-in-out;
+	transition-property: background-color, color;
+}
+
+#header-list a:hover{
+	color: yellow!important;
+	cursor: pointer;
+	outline-style: none;
+}
+
+.active{
+	border-bottom: 4px solid yellow;
+	color: yellow!important;
+}
+
+#nav-bars{
+	display: none;
+	z-index: 10;
+	background: rgba(102, 0, 0, 0.8);
+}
+
+#nav-button{
+	color: #fff;
+}
+
+#nav-list{
+	display: none;
+	list-style: none;
+	text-align: left;
+	padding-bottom: 1rem;
+	width: 100vw;
+}
+
+#nav-list li{
+	padding-bottom: 6px;
+	border-bottom: 2px solid rgba(26, 0, 0, 0.2);
+}
+
+#nav-list a{
+	text-decoration: none;
+	color: #fff;
+	display: block;
+	padding-top: 1rem;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+.nav-active{
+	border-bottom: 2px solid rgb(255,255,0,1)!important;
+}
+
+.nav-active a{
+	color: yellow!important;
+}
+
+#nav-list a:hover{
+	color: yellow!important;
+	cursor: pointer;
+	outline-style: none;
+}
+
+#nav-list a:active{
+	color: yellow!important;
+	cursor: pointer;
+	outline-style: none;
+}
+
+#landing{
+	padding-bottom: 0px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+#landing-image{
+	background-color: #660000;
+	display: block;
+	width: 100%;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	padding-bottom: 20px;
+}
+
+#arrow-left, #arrow-right{
+	color: #fff;
+	border-radius: 50%;
+	background-color: rgba(128, 128, 128, 0.4);
+	transition-duration: 0.5s;
+	transition-timing-function: ease-in-out;
+	transition-property: background-color, color;
+}
+
+#arrow-left, #arrow-right{
+	display: none;
+}
+
+#arrow-left{
+	position: absolute;
+	left: 5%;
+}
+
+#arrow-right{
+	position: absolute;
+	right: 5%;
+}
+
+#arrow-left{
+	outline-style: none;
+	padding: 6px 15px 6px 13px;
+}
+
+#arrow-right{
+	outline-style: none;
+	padding: 6px 13px 6px 15px;
+}
+
+#arrow-left:active, #arrow-right:active{
+	background-color: rgba(128, 128, 128, 0.5);
+	outline-style: none;
+}
+
+#arrow-left:hover, #arrow-right:hover{
+	background-color: rgba(128, 128, 128, 0.8);
+	cursor: pointer;
+	outline-style: none;
+}
+
+#scroll-to-top{
+	width: 960px;
+	margin: auto;
+}
+
+#scroll-to-top button{
+	display: none;
+	background-color: rgba(128, 128, 128, 0.5);
+	color: #fff;
+	position: fixed;
+	bottom: 20%;
+	right: 5%;
+	padding: 0.6rem 1rem;
+	border-radius: 4px;
+	transition-duration: 0.5s;
+	transition-timing-function: ease-in-out;
+	transition-property: background-color, color;
+}
+
+#scroll-to-top button:hover{
+	cursor: pointer;
+	background-color: rgba(128, 128, 128, 0.3);
+	outline-style: none;
+}
+
+#scroll-to-top button:active{
+	cursor: pointer;
+	background-color: rgba(128, 128, 128, 0.3);
+	outline-style: none;
+}
+
+#home-content{
+	
+}
+
+#home-content-info{
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+}
+
+#home-content-info h1{
+	font-weight: normal;
+	color: #b30000;
+	text-align: center;
+	padding-bottom: 2rem;
+}
+
+#home-content-grid{
+	display: grid;
+	grid-template-columns: 32% 32% 32%;
+	justify-content: space-between;
+	color: #fff;
+}
+
+.home-grid-card{
+	background-color: #660000;
+	border-bottom: 10px #330000 solid;
+	max-width: 300px;
+}
+
+#home-content-grid div h3{
+	text-align: center;
+	background-color: #990000;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#home-content-grid div div{
+	text-align: center;
+	margin: auto;
+	max-height: 180px;
+	max-width: 300px;
+}
+
+#home-content-grid div img{
+	padding: 10px;
+	width: 100%;
+  	height: auto;
+}
+
+#home-content-grid div p{
+	font-size: 80%;
+	max-width: 280px;
+	min-height: 80px;
+	text-align: center;
+	margin: auto;
+}
+
+#home-content-grid a{
+	display: inline-block;
+	text-decoration: none;
+	color: black;
+	margin-left: 20px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	padding: 10px 20px;
+	border-radius: 3px;
+	background: #f4f4f4;
+	transition-duration: 0.5s;
+	transition-timing-function: ease-in-out;
+	transition-property: background-color, color;
+}
+
+#home-content-grid a:hover{
+	background: #ccc;
+	cursor: pointer;
+	outline-style: none;
+}
+
+#home-content-grid a:active{
+	background: #f4f4f4;
+	cursor: pointer;
+	outline-style: none;
+}
+
+/*=======MEDIA QUERIES=======================================*/
+
+@media(max-width: 992px){
+	main{
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	#custom-header{
+		align-items: flex-start;
+		justify-content: center;
+	}
+	#custom-header img{
+		width: 90px;
+		height: 90px;
+	}
+	#header-list{
+		padding-left: 0;
+		padding-top: 100px;
+	}
+	footer{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	#logo{
+		z-index: 20;
+		margin-left: 20px;
+	}
+}
+
+@media(max-width: 768px){
+	#custom-header{
+		align-items: flex-start;
+		justify-content: flex-start;
+		height: 70px;
+	}
+	#header-list{
+		padding-top: 70px;
+	}
+	#header-list a{
+		display: none;
+	}
+	#nav-bars{
+		display: flex;
+		flex-direction: column;
+		padding-top: 14px;
+		align-content: flex-start;
+		justify-content: flex-end;
+		text-align: right;
+	}
+	#nav-button{
+		padding-right: 20px;
+	}
+	#nav-list li{
+		padding-bottom: 6px;
+	}
+	#nav-bars a{
+		width: 100vw;
+	}
+	#arrow-left{
+		display: block;
+		outline-style: none;
+		padding: 1px 10px 1px 9px;
+		left: 2%;
+	}
+	#arrow-right{
+		display: block;
+		outline-style: none;
+		padding: 1px 9px 1px 10px;
+		right: 2%;
+	}
+	#scroll-to-top button{
+		right: 0px;
+	}
+	#home-content-grid{
+		display: block;
+		align-content: center;
+	}
+	.home-grid-card{
+		margin: auto;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+}
+
+
